@@ -1,0 +1,36 @@
+.countries{
+    &-container{
+        max-width: 1020px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+    &-header{
+        padding: .75rem 0;
+
+        display: flex;
+        align-items: center;
+    
+        border-bottom: 2px solid var(--green);
+        font-weight: 700;
+        text-transform: uppercase;
+    
+        & > div:not(:first-of-type){
+            flex: 1;
+            padding: 0 1.5rem;
+        }
+
+        > div:first-of-type{
+            width: 1.5rem;
+        }
+
+        > div.active{
+            color: var(--green);
+        }
+
+        @media (max-width: 577px) {
+            div:nth-child(4) , div:nth-child(5){
+                display: none;
+            }
+        }
+    }
+}

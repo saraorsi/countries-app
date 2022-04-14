@@ -1,0 +1,37 @@
+.country{
+    padding: .75rem 0;
+
+    display: flex;
+    align-items: center;
+
+    border-bottom: 2px solid var(--green);
+
+    & > div:not(:first-of-type){
+        flex: 1;
+        padding: 0 1.5rem;
+    }
+
+    transition: color .3s;
+    &:hover{
+        color: var(--green);
+    }
+
+    &-flag{
+        width: 1.5rem;
+        height: 1.5rem;
+
+        border-radius: 50%;
+
+        background-size: cover;
+        background-position: center;
+    }
+
+    &-name{
+        font-weight: 700;
+    }
+    @media (max-width: 577px) {
+        .country-population, .country-area{
+            display: none;
+        }
+    }
+}

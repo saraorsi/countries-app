@@ -1,0 +1,33 @@
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 2rem;
+
+    background: var(--background-color);
+    z-index: 100;
+    .logo{
+        a{
+            transition: color .3s;
+            &:hover{
+                color: var(--green);
+            }
+        }
+    }
+    button {
+        border: none;
+        background: transparent;
+
+        font-size: 1.5rem;
+
+        color: var(--color);
+        cursor: pointer;
+    }
+}

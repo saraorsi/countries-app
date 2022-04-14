@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --green: #00FF00;
+    --background-color: #FAFAFA;
+    --color: #000000;
+    &[data-theme="dark"]{
+        --background-color: #2B2B2B;
+        --color: #FAFAFA;
+    }
+    @media (max-width: 577px) {
+        font-size: 14px;
+    }
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--color);
+}
+
+a{
+    color: var(--color);
+    text-decoration: none;
+}
+
+main{
+    padding: 8rem 0 5rem 0;
+}

@@ -1,0 +1,25 @@
+.search{
+    max-width: 1020px;
+    margin: 0 auto 3rem;
+    padding: 0 1.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    &-results{
+        font-weight: 700;
+    }
+    &-form{
+        input{
+            border: 2px solid var(--green);
+            background-color: transparent;
+            height: 2rem;
+            width: 13.5rem;
+            padding: .5rem;
+            color: inherit;
+            &::placeholder{
+                color: inherit;
+            }
+        }
+    }
+}
